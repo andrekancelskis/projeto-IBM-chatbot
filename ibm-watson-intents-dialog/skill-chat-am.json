@@ -1,0 +1,1429 @@
+{
+  "name": "chat-am",
+  "intents": [
+    {
+      "intent": "Termos_legais_de_Startup",
+      "examples": [
+        {
+          "text": "Quais termos legais de uma Startup?"
+        },
+        {
+          "text": "Qual a legislação que uma Startup deve seguir?"
+        },
+        {
+          "text": "Quais políticas uma startup prega?"
+        },
+        {
+          "text": "Quais as regras internas de uma Startup?"
+        },
+        {
+          "text": "Devo registrar a minha Startup?"
+        },
+        {
+          "text": "Quais leis e obrigações de uma Startup?"
+        },
+        {
+          "text": "Quais os aspectos legais para um Startup?"
+        },
+        {
+          "text": "Qual o termo de regularização de uma Startup?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Brasil_incentivo_Startup",
+      "examples": [
+        {
+          "text": "Qual incentivo o Brasil dispõe para startup?"
+        },
+        {
+          "text": "O Brasil busca o incentivo de novas startups?"
+        },
+        {
+          "text": "O que o Brasil faz para incentivar uma Startup?"
+        },
+        {
+          "text": "Startups tem o incentivo no Brasil?"
+        },
+        {
+          "text": "Existe algum programa de apoio para Startup?"
+        },
+        {
+          "text": "Fala aí o Brasil incentiva na criação de startups?"
+        },
+        {
+          "text": "Melhor programa de incentivo para Startup?"
+        },
+        {
+          "text": "Como o Brasil pode melhorar o incentivo às Startups?"
+        },
+        {
+          "text": "Quais as maiores Startup no Brasil?"
+        },
+        {
+          "text": "No Brasil, existe algum incentivo para criação de startup?"
+        },
+        {
+          "text": "O Brasil incentiva a criação de startups?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Diferença_Startup_outras_empresas",
+      "examples": [
+        {
+          "text": "Existe diferença entre Startup e empresa comum?"
+        },
+        {
+          "text": "Qual a diferença de uma startup e uma empresa tradicional?"
+        },
+        {
+          "text": "Toda Startup pode se tornar uma empresa?"
+        },
+        {
+          "text": "Toda Startup é início de uma empresa?"
+        },
+        {
+          "text": "Startup é considerada uma empresa?"
+        },
+        {
+          "text": "Uma Startup é uma empresa?"
+        },
+        {
+          "text": "Quais as principais diferenças de uma Startup e uma empresa?"
+        },
+        {
+          "text": "Startup é igual empresa júnior?"
+        },
+        {
+          "text": "Qualquer empresa pode ser uma startup?"
+        },
+        {
+          "text": "Diz aí as diferenças de uma startup e uma empresa?"
+        },
+        {
+          "text": "O que diferencia uma Startup de uma empresa?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Erros_de_uma_Startup",
+      "examples": [
+        {
+          "text": "Quais são os erros de uma Startup?"
+        },
+        {
+          "text": "O que fazer para não cometer erros ao criar uma Startup?"
+        },
+        {
+          "text": "Quantos erros são possíveis em uma Startup?"
+        },
+        {
+          "text": "Startups funcionam com erros?"
+        },
+        {
+          "text": "É possível cometer erros em uma Startup?"
+        },
+        {
+          "text": "Me fala aí quais erros de uma Startup?"
+        },
+        {
+          "text": "Existem erros comuns em Startups?"
+        },
+        {
+          "text": "Startups podem cometer erros?"
+        },
+        {
+          "text": "Quais os maiores erros de uma Startup?"
+        },
+        {
+          "text": "Quais os erros comuns de uma Startup?"
+        },
+        {
+          "text": "Existem erros que podem ser prevenidos para uma Startup?"
+        },
+        {
+          "text": "é comum cometer erros em uma Startup?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "O_que_é_startup",
+      "examples": [
+        {
+          "text": "Startup é uma microempresa?"
+        },
+        {
+          "text": "Startup seria um início de uma grande empresa?"
+        },
+        {
+          "text": "Startups, são empresas?"
+        },
+        {
+          "text": "Qual a definição de startup?"
+        },
+        {
+          "text": "O que seria Startup?"
+        },
+        {
+          "text": "Qual é da Startup?"
+        },
+        {
+          "text": "Startup é uma empresa?"
+        },
+        {
+          "text": "Diz aí o que é uma startup?"
+        },
+        {
+          "text": "O que é uma startup?"
+        },
+        {
+          "text": "Me fala aí o que é uma startup?"
+        },
+        {
+          "text": "Quais as características de uma Startup?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Documentacao_Startups",
+      "examples": [
+        {
+          "text": "é necessário algum documento para a Startup?"
+        },
+        {
+          "text": "Quando devo registrar minha Startup?"
+        },
+        {
+          "text": "Existe registro para Startup?"
+        },
+        {
+          "text": "Como fazer o registro das Startups?"
+        },
+        {
+          "text": "Startup precisa de CNPJ?"
+        },
+        {
+          "text": "Startup precisa de Razão Social?"
+        },
+        {
+          "text": "Startup precisa de Inscrição Estadual?"
+        },
+        {
+          "text": "Startup precisa de Inscrição Municipal?"
+        },
+        {
+          "text": "preciso de qual documentacao para iniciar uma startup?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Investir_Startup",
+      "examples": [
+        {
+          "text": "É necessário ter um investidor em uma Startups?"
+        },
+        {
+          "text": "Quanto preciso para iniciar uma Startup?"
+        },
+        {
+          "text": "Posso investir em uma startup?"
+        },
+        {
+          "text": "Startup precisam de um investidor?"
+        },
+        {
+          "text": "Posso ser um investidor de um startup?"
+        },
+        {
+          "text": "Quero investir em uma Startup?"
+        },
+        {
+          "text": "Como devo investir em uma Startup?"
+        },
+        {
+          "text": "Quanto tempo espero o retorno do meu investimento?"
+        },
+        {
+          "text": "Qual o prazo para a Startup se pagar?"
+        },
+        {
+          "text": "Quanto preciso gastar para investir uma Startup?"
+        },
+        {
+          "text": "Todas startups precisam de um investidor?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Validacao_Startups",
+      "examples": [
+        {
+          "text": "Para que é preciso validar uma startup?"
+        },
+        {
+          "text": "Por que é preciso validar uma startup?"
+        },
+        {
+          "text": "Como se valida uma startup?"
+        },
+        {
+          "text": "O que preciso para validar minha startup?"
+        },
+        {
+          "text": "Startup precisa de validação?"
+        },
+        {
+          "text": "O que é validação de uma startup?"
+        },
+        {
+          "text": "Validação de uma startups?"
+        },
+        {
+          "text": "Como a validação pode influenciar na Startup?"
+        },
+        {
+          "text": "O que é validação em uma Startup?"
+        },
+        {
+          "text": "Qual o objetivo de validar sua startup?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "inicio",
+      "examples": [
+        {
+          "text": "duvida"
+        },
+        {
+          "text": "preciso de uma ajuda"
+        },
+        {
+          "text": "tenho duvida"
+        },
+        {
+          "text": "eai"
+        },
+        {
+          "text": "beleza"
+        },
+        {
+          "text": "bom dia"
+        },
+        {
+          "text": "boa tarde"
+        },
+        {
+          "text": "boa noite"
+        },
+        {
+          "text": "como vai?"
+        },
+        {
+          "text": "oi"
+        },
+        {
+          "text": "olá"
+        },
+        {
+          "text": "quero ajuda"
+        },
+        {
+          "text": "tenho uma duvida?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Dificuldades_startups",
+      "examples": [
+        {
+          "text": "Me fala ai das dificuldades de uma Startup?"
+        },
+        {
+          "text": "Qual a maior dificuldade que vou ter para criar uma Startup?"
+        },
+        {
+          "text": "Existem dificuldades para criar uma startup?"
+        },
+        {
+          "text": "É fácil criar uma startup?"
+        },
+        {
+          "text": "É difícil criar uma startup?"
+        },
+        {
+          "text": "Quais as principais dificuldades de uma Startup?"
+        },
+        {
+          "text": "Preciso ter experiência para criar uma Startup?"
+        },
+        {
+          "text": "Existem dificuldades em criar uma Startup?"
+        },
+        {
+          "text": "Startups sofrem algum tipo de dificuldades?"
+        },
+        {
+          "text": "Qual a dificuldade em ter uma Startup?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Crescimento_Startups",
+      "examples": [
+        {
+          "text": "Como Startups crescem tão rápido?"
+        },
+        {
+          "text": "Startups surgem do nada?"
+        },
+        {
+          "text": "Startups cresce como?"
+        },
+        {
+          "text": "Diz aí como é crescimento de uma Startup?"
+        },
+        {
+          "text": "Me fala ai sobre o crescimento de uma startup"
+        },
+        {
+          "text": "Como uma startup fica famosa?"
+        },
+        {
+          "text": "Quanto tempo leva para uma Startup crescer?"
+        },
+        {
+          "text": "Qual é o máximo que uma Startup pode crescer?"
+        },
+        {
+          "text": "Qual é o limite que uma Startup atinge?"
+        },
+        {
+          "text": "como funciona o cresimento de uma startup?"
+        },
+        {
+          "text": "Como é o crescimento de uma startup?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "A_moda_das_startups",
+      "examples": [
+        {
+          "text": "O que acontece com o mercado para existirem tantas startups?"
+        },
+        {
+          "text": "Como posso prever mudanças na startup?"
+        },
+        {
+          "text": "Porque as startups estão em alta?"
+        },
+        {
+          "text": "E agora o que esperar para as startups?"
+        },
+        {
+          "text": "O que precisa para startup sair de moda?"
+        },
+        {
+          "text": "Como sei que startup ainda está na moda?"
+        },
+        {
+          "text": "Essa moda é passageira?"
+        },
+        {
+          "text": "Porque startup está na moda?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Startup_no_mercado_de_trabalho",
+      "examples": [
+        {
+          "text": "O que o mercado espera de uma startup?"
+        },
+        {
+          "text": "O que o mercado deseja de uma Startup?"
+        },
+        {
+          "text": "Startups tem fácil acesso no mercado de trabalho?"
+        },
+        {
+          "text": "Startups tem facilidade no mercado?"
+        },
+        {
+          "text": "Qual área de mercado é mais difícil para iniciar uma Startup?"
+        },
+        {
+          "text": "Qual área de mercado é mais fácil para iniciar uma Startup?"
+        },
+        {
+          "text": "Qual área do mercado tem maior abrangência das Startups?"
+        },
+        {
+          "text": "Como ela se encaixa no mercado?"
+        },
+        {
+          "text": "Qual o modelo de negócio de Startup?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Como_se_cria_uma_startup",
+      "examples": [
+        {
+          "text": "Quero começar uma Startup, o que fazer?"
+        },
+        {
+          "text": "Me fala aí com se cria um startup?"
+        },
+        {
+          "text": "Como se cria uma startup?"
+        },
+        {
+          "text": "De onde surgem as startups?"
+        },
+        {
+          "text": "Startups vem do nada?"
+        },
+        {
+          "text": "Startups surgem de onde?"
+        },
+        {
+          "text": "Quais os passos iniciais para criação de uma startup?"
+        },
+        {
+          "text": "O que preciso para criar uma Startup?"
+        },
+        {
+          "text": "Como posso começar uma Startup?"
+        },
+        {
+          "text": "Por onde começo a criar uma Startup?"
+        },
+        {
+          "text": "Startups são criadas como?"
+        },
+        {
+          "text": "Qualquer ideia pode se tornar uma Startup?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Vantagens_Startup",
+      "examples": [
+        {
+          "text": "O que coloca uma startup na frente de uma empresa tradicional?"
+        },
+        {
+          "text": "Todas as Startups possuem as mesmas vantagens?"
+        },
+        {
+          "text": "De modo geral, as vantagens de uma Startup valem a pena?"
+        },
+        {
+          "text": "Startups podem gerar benefícios?"
+        },
+        {
+          "text": "Por que criar uma startup?"
+        },
+        {
+          "text": "Startups tem benefícios?"
+        },
+        {
+          "text": "Startups possuem vantagens?"
+        },
+        {
+          "text": "Diz aí as vantagens de uma startup?"
+        },
+        {
+          "text": "Quais os benefícios de uma startup?"
+        },
+        {
+          "text": "Startups trazem vantagens?"
+        },
+        {
+          "text": "Quais são as vantagens de uma startup?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "agradecimento",
+      "examples": [
+        {
+          "text": "ok"
+        },
+        {
+          "text": "valeu"
+        },
+        {
+          "text": "gostei dessa resposta"
+        },
+        {
+          "text": "legal"
+        },
+        {
+          "text": "que bacana"
+        },
+        {
+          "text": "obrigada"
+        },
+        {
+          "text": "boa resposta"
+        },
+        {
+          "text": "valeu pela resposta"
+        },
+        {
+          "text": "obrigado"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Maiores_Startups",
+      "examples": [
+        {
+          "text": "Qual a maior Startup?"
+        },
+        {
+          "text": "Quais as maiores Startup do Brasil?"
+        },
+        {
+          "text": "Quais as maiores Startup do Mundo?"
+        },
+        {
+          "text": "Quais as Startup mais rentáveis do Brasil?"
+        },
+        {
+          "text": "O que precisa para ser a maior Startup do Brasil?"
+        },
+        {
+          "text": "Qual a maior Startup do Brasil?"
+        },
+        {
+          "text": "quais sao as maiores startups?"
+        },
+        {
+          "text": "é possível uma Startup ser grande?"
+        },
+        {
+          "text": "O que faz com que uma Startup seja considerada grande?"
+        },
+        {
+          "text": "O que é uma startup exemplo?"
+        },
+        {
+          "text": "Qual a maior Startup do Mundo?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Local_maior_sucesso_Startups",
+      "examples": [
+        {
+          "text": "Qual a região com as melhores startups?"
+        },
+        {
+          "text": "Onde fica a maior concentração de Startups de sucesso?"
+        },
+        {
+          "text": "Startups surgem com maior frequência, em qual local?"
+        },
+        {
+          "text": "Em que lugar fica o maior polo de Startups?"
+        },
+        {
+          "text": "Quais os fatores que atraem as Startups?"
+        },
+        {
+          "text": "O que favorece a criação de um polo de Startups?"
+        },
+        {
+          "text": "Me fala aí qual o local de maior sucesso de uma startup?"
+        },
+        {
+          "text": "Quantos polos existem de Startups?"
+        },
+        {
+          "text": "Onde é o polo das Startups?"
+        },
+        {
+          "text": "Onde se concentra o maior número de startup com sucesso?"
+        },
+        {
+          "text": "Qual o local de maior sucesso de startup?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Saber_se_uma_Startup_vai_vingar",
+      "examples": [
+        {
+          "text": "Quanto tempo demora para saber se uma Startup dará certo?"
+        },
+        {
+          "text": "O que saber para uma Startup ter sucesso?"
+        },
+        {
+          "text": "Todas startups tem sucesso?"
+        },
+        {
+          "text": "Como posso saber se uma Startup vai crescer?"
+        },
+        {
+          "text": "Startup terá sucesso?"
+        },
+        {
+          "text": "Dá para saber se uma startup terá sucesso?"
+        },
+        {
+          "text": "Como testar se o conceito da startup vai dar certo?"
+        },
+        {
+          "text": "Como saber quando devo persistir ou desistir da minha Startup?"
+        },
+        {
+          "text": "Quais são os passos para uma Startup prosperar?"
+        },
+        {
+          "text": "Como saber se uma Startup vai funcionar?"
+        },
+        {
+          "text": "Quais são os sinais para uma Startup vingar?"
+        },
+        {
+          "text": "Como sei se a Startup irá vingar?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "O_que_as_Startups_fazem",
+      "examples": [
+        {
+          "text": "Qual o método de trabalho de uma Startup?"
+        },
+        {
+          "text": "Startups só trabalham em um projeto por vez?"
+        },
+        {
+          "text": "Quantos projetos uma Startup faz?"
+        },
+        {
+          "text": "Como descobrir se uma empresa é uma Startup?"
+        },
+        {
+          "text": "Como trabalham as Startups?"
+        },
+        {
+          "text": "Qual a metodologia usada em uma Startup?"
+        },
+        {
+          "text": "Como funcionam as Startups?"
+        },
+        {
+          "text": "As Startups criam o que?"
+        },
+        {
+          "text": "Me fala aí o que as startups fazem?"
+        },
+        {
+          "text": "Startups realizam o que?"
+        },
+        {
+          "text": "Startups fazem o que?"
+        },
+        {
+          "text": "Como funciona uma startup?"
+        },
+        {
+          "text": "O que as startups fazem?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Qual_os_principais_meios_de_atuacao_de_uma_Startup",
+      "examples": [
+        {
+          "text": "No que as startups atuam?"
+        },
+        {
+          "text": "Qual área um startups atua?"
+        },
+        {
+          "text": "Startups atuam em que área?"
+        },
+        {
+          "text": "Startup sempre está relacionada com tecnologia?"
+        },
+        {
+          "text": "Startups obrigatoriamente trabalho com assuntos tecnológicos?"
+        },
+        {
+          "text": "Startups utilizam tecnologia?"
+        },
+        {
+          "text": "Startups atuam só com tecnologia?"
+        },
+        {
+          "text": "Qual a melhor área para uma Startup?"
+        },
+        {
+          "text": "Existe alguma área de atuação com mais facilidade?"
+        },
+        {
+          "text": "Existe diversidade de áreas de atuação nas Startups?"
+        },
+        {
+          "text": "Startups podem atuar em qualquer área?"
+        },
+        {
+          "text": "Quais os principais meios de atuação de uma Startup?"
+        },
+        {
+          "text": "Uma Startup só pode ser de tecnologia?"
+        },
+        {
+          "text": "Diz aí os principais meios de atuação de uma startup?"
+        },
+        {
+          "text": "Qual o nicho que uma Startup foca?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Desvantagens_Startups",
+      "examples": [
+        {
+          "text": "Quais as desvantagens mais prejudiciais para as Startups?"
+        },
+        {
+          "text": "Desvantagens que uma startup pode ter?"
+        },
+        {
+          "text": "Como as desvantagens atrapalham as Startups?"
+        },
+        {
+          "text": "Quais as desvantagens de uma startup?"
+        },
+        {
+          "text": "Startups tem desvantagens?"
+        },
+        {
+          "text": "De modo geral, as desvantagens de uma Startup valem a pena?"
+        },
+        {
+          "text": "Todas as Startups possuem as mesmas desvantagens?"
+        },
+        {
+          "text": "As desvantagens são prejudiciais às Startups?"
+        },
+        {
+          "text": "Diz aí as desvantagens de uma startup?"
+        },
+        {
+          "text": "Posso ter desvantagens ao ter uma Startup?"
+        },
+        {
+          "text": "Quais os problemas de ter uma startup?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Futuro_das_startups",
+      "examples": [
+        {
+          "text": "Qual futuro de startups?"
+        },
+        {
+          "text": "O que vem a seguir?"
+        },
+        {
+          "text": "O que podemos saber sobre o futuro desse conceito?"
+        },
+        {
+          "text": "Qual a melhor maneira de determinar o que virá?"
+        },
+        {
+          "text": "Como startup pode evoluir?"
+        },
+        {
+          "text": "O conceito de startup irá mudar?"
+        },
+        {
+          "text": "Startups vão acabar?"
+        },
+        {
+          "text": "E agora qual será futuro das startups?"
+        },
+        {
+          "text": "Quais os impactos dessas mudanças hoje?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Sustentabilidade_Startup",
+      "examples": [
+        {
+          "text": "Startups realizam o quê para ser sustentável?"
+        },
+        {
+          "text": "Startups precisam ser sustentáveis?"
+        },
+        {
+          "text": "Startups salvam o planeta?"
+        },
+        {
+          "text": "Quantas Startups se preocupam com o meio ambiente?"
+        },
+        {
+          "text": "O que as Startup fazem para serem sustentáveis?"
+        },
+        {
+          "text": "Quantas Startup são sustentáveis?"
+        },
+        {
+          "text": "Quais Startup são sustentáveis?"
+        },
+        {
+          "text": "Startup praticam sustentabilidade?"
+        },
+        {
+          "text": "Startups buscam ser sustentável?"
+        },
+        {
+          "text": "Startup é sustentável?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [],
+  "language": "pt-br",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "skill_id": "51cc9a53-49d6-4dd9-9341-43682422eed0",
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Primeiramente é preciso ter a definição do problema, com isso, realizar criação do questionário, definição do público da sua pesquisa, análise dos resultados. Portanto, se ainda não sabe, preferencialmente não o faça.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Como_se_cria_uma_startup",
+      "dialog_node": "node_3_1569420249798",
+      "previous_sibling": "node_1_1569420271285"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_3_1569420043184"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As startáps possuem mais chances de darem errado do que os modelos de empresas tradicionais. Dificilmente uma ideia dará certo na primeira tentativa. Dar início a uma startáp é um desafio e tanto. A criatividade e a capacidade de pensar em ideias inovadoras são características essenciais para quem deseja se arriscar nesse ramo.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Desvantagens_Startups",
+      "dialog_node": "node_10_1569420357565",
+      "previous_sibling": "node_3_1569420378596"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ter uma noção se sua startáp irá ter um crescimento, é preciso observar suas validações, podendo depender de o quão inovadora será sua startáp. Por isso muitos não conseguem, assim gerando uma ideia se sua inovação vai vingar no mercado.\n \n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Saber_se_uma_Startup_vai_vingar",
+      "dialog_node": "node_9_1569420772151",
+      "previous_sibling": "node_10_1569420804719"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "startáps criam soluções inovadoras para o mercado atual. Trabalham de forma repetível e escalável, podendo criar soluções até agora inimagináveis, geralmente trabalham baseada somente em uma ideia, desenvolvendo um projeto por vez.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#O_que_as_Startups_fazem",
+      "dialog_node": "node_4_1569420680377",
+      "previous_sibling": "node_2_1569420706480"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "startáps não necessariamente atuam somente na tecnologia, mas por ser uma área de grandes inovações, são as melhores para desenvolvimentos tecnológicos, mas isso está longe de excluir outros mercados para startáps.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Qual_os_principais_meios_de_atuacao_de_uma_Startup",
+      "dialog_node": "node_6_1569420730944",
+      "previous_sibling": "node_9_1569420772151"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O crescimento de uma startáp depende de sua ideia, o quanto ela é inovadora para o mercado no momento atual, e também o quanto ela irá revolucionar com seu novo negócio. Podendo chegar a limites inimagináveis, só depende de suas inovações e uma boa gestão de seus criadores."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Crescimento_Startups",
+      "dialog_node": "node_1_1569420271285",
+      "previous_sibling": "node_10_1569420357565"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "De nada, qualquer coisa só me chamar."
+              },
+              {
+                "text": "Valeu, estou aqui qualquer coisa."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#agradecimento",
+      "dialog_node": "node_8_1569421395280",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As grandes dificuldades para as startáps é encontrar um problema a ser resolvido, também a falta de incentivo no mercado, a falta de experiência dos seus criadores e a má gestão, podem acabar fazendo que a startáp não saia dos papéis.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Dificuldades_startups",
+      "dialog_node": "node_2_1569420415964",
+      "previous_sibling": "node_3_1569420440867"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As startáps possuem a vantagem de desenvolver uma inovação, assim podendo ter diferentes ideias, redirecionando rapidamente seu foco, assim conseguindo atingir o objetivo traçado.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Vantagens_Startup",
+      "dialog_node": "node_1_1569420916478",
+      "previous_sibling": "node_8_1569421395280"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " Enquanto o produto desenvolvido ainda não está pronto para ser comercializado, não há a necessidade de regularizar a startáp em uma empresa. Depois disso, a empresa terá que ter registro na Junta Comercial, inscrição na Receita Federal do Brasil e CNPJ.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Documentacao_Startups",
+      "dialog_node": "node_3_1569420440867",
+      "previous_sibling": "node_8_1569420493466"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "startáp Brasil é o único programa do governo de incentivo, as startáps da área de T i, que está inativo no momento, mas pode reabrir em breve. Financiamento com juros reduzidos: Raramente recomendamos, pois, empresas em estágio inicial correm um risco alto de não gerar caixa suficiente para quitar a dívida. \n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Brasil_incentivo_Startup",
+      "dialog_node": "node_2_1569420221855",
+      "previous_sibling": "node_3_1569420249798"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " Existem duas etapas jurídicas para uma startáp,  Ato de Constituição, e Tipo Jurídico. A primeira decisão que o empreendedor deve considerar são as implicações legais sobre qual tipo jurídico sua startáp será constituída."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Termos_legais_de_Startup",
+      "dialog_node": "node_8_1569420854862",
+      "previous_sibling": "node_8_1569420889814"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Como startáps são ideias inovadoras, elas podem se interessar em criar soluções sustentáveis, ou seja, depende de cada startáp, como por exemplo a SOLOS e, BOOMERA, são exemplos de startáps sustentáveis.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Sustentabilidade_Startup",
+      "dialog_node": "node_6_1569420834006",
+      "previous_sibling": "node_8_1569420854862"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " Uma startáp é uma empresa diferente de uma empresa tradicional porque ela utiliza, geralmente, tecnologia e modelos de negócio diferenciados, que fazem com que ela cresça numa velocidade muito acima do normal de mercado. Enquanto uma empresa tradicional cresce de dez por cento a vinte por cento ao ano, uma startáp tem um crescimento de mais de duzentos por cento ao ano.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Startup_no_mercado_de_trabalho",
+      "dialog_node": "node_10_1569420804719",
+      "previous_sibling": "node_6_1569420834006"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A validação do processo de uma startáp é muito importante para você focar seus esforços num produto. Uma boa prática é separar em cinco blocos, Cliente, Problema, Proposta de valor, Solução, Dimensão de mercado.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Validacao_Startups",
+      "dialog_node": "node_8_1569420889814",
+      "previous_sibling": "node_1_1569420916478"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "startáps buscam negócios inovadores e de um cenário ainda incerto, elas dependem de mudanças rápidas para adequarem as suas estratégias a novos cenários. Já com empresas tradicionais ocorre o oposto, essas não apresentam um crescimento escalável e tampouco estão preparadas para incertezas e riscos de mercado. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Diferença_Startup_outras_empresas",
+      "dialog_node": "node_3_1569420378596",
+      "previous_sibling": "node_2_1569420415964"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " As regiões com maior índice de startáps é o Vale do Silício, pois o ambiente favorece as inovações que surgem por lá, também há o incentivo por partes interessadas.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Local_maior_sucesso_Startups",
+      "dialog_node": "node_6_1569420573162",
+      "previous_sibling": "node_10_1569420621474"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Uma das principais características que os investidores procuram em uma startáp é a solução ideal para um grande problema de mercado. Ter um mínimo produto viável ou protótipo funcional já em andamento pode ajudar no processo de convencimento.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Investir_Startup",
+      "dialog_node": "node_9_1569420545970",
+      "previous_sibling": "node_6_1569420573162"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não se sabe ao certo se o conceito de startáp é passageiro ou não, o que depende de inúmeros fatores, mas o que posso afirmar é que startáps chegaram para ficar e revolucionar o mercado como conhecemos hoje, toda a mudança é para o bem e para um maior desenvolvimento.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#A_moda_das_startups",
+      "dialog_node": "node_3_1569420043184",
+      "previous_sibling": "node_2_1569420221855"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os principais erros de uma startáps são, Idéias derivadas, contrato de maus programadores, plataforma errada, lentidão no lançamento, excesso de gastos, relação ruim com investidores, e outros fatores.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Erros_de_uma_Startup",
+      "dialog_node": "node_8_1569420493466",
+      "previous_sibling": "node_6_1569420516962"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Essa são exemplos das startáps mais valiosas no ano, Xiaomi, úber e Palantir. As maiores Startáps de 2018 com sede no Brasil, Nubank, Creditas e Guia Bolso.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Maiores_Startups",
+      "dialog_node": "node_10_1569420621474",
+      "previous_sibling": "node_4_1569420680377"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "startáps são empresas em fase inicial que desenvolvem produtos ou serviços inovadores, com potencial de rápido crescimento. Com um modelo de negócios repetível e escalável, trabalhando em condições de extrema incerteza.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#O_que_é_startup",
+      "dialog_node": "node_2_1569420706480",
+      "previous_sibling": "node_6_1569420730944"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O futuro é incerto para startáps, o mercado irá ditar as mudanças que virão a seguir."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Futuro_das_startups",
+      "dialog_node": "node_6_1569420516962",
+      "previous_sibling": "node_9_1569420545970"
+    },
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá, diz ai, qual é sua dúvida?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#inicio",
+      "dialog_node": "Bem-vindo"
+    }
+  ],
+  "workspace_id": "51cc9a53-49d6-4dd9-9341-43682422eed0",
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}
