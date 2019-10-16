@@ -1,87 +1,72 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
+<link rel="shortcut icon" href="img/favicon.ico">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link
-	href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap"
+	href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
 	rel="stylesheet">
 <link
-	href="https://fonts.googleapis.com/css?family=Nunito:900&display=swap"
-	rel="stylesheet">
-<link
-	href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
+	href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed&display=swap"
 	rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style/index.css">
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-	crossorigin="anonymous">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Fiap EAD</title>
 </head>
 <body>
 	<c:choose>
 		<c:when test="${logado != null }">
-		<a href="conteudo.jsp">chatbot</a>
 			<header>
-				<p id="nome">
-					Ol·
-					<%=session.getAttribute("nomeAluno")%>!
-				</p>
+
 				<p class="opcao">
 					<a href="https://www2.fiap.com.br/"> Portal do aluno</a>
+				</p>
+				<p id="nome">
+					Ol√°
+					<%=session.getAttribute("nomeAluno")%>!
 				</p>
 				<p class="opcao">
 					<a href="logout">Sair</a>
 				</p>
+
 			</header>
-			<h1>Nivelamento</h1>
-			<div class="card-deck">
-				<div class="card">
-					<img src="img/algoritmo.jpg" class="card-img-top " alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Algoritimo</h5>
-						<p class="card-text">EAD focado em ajudar oferecer apoio ‡
-							matÈria de algoritmo</p>
-						<p class="botao">
-							<a href="#">Conteudo</a>
-						</p>
-					</div>
+			
+			<div class="container">
+				<div class="algoritmo">
+					<img src="img/algoritmo.jpg">
+					<h5 class="name">Algoritimo</h5>
+					<p class="desc">EAD focado em oferecer apoio √† mat√©ria de
+						algoritmos</p>
+					<a href="#" class="unavailable">Conte√∫do</a>
 				</div>
-				<div class="card">
-					<img src="img/portugues.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Portugues</h5>
-						<p class="card-text">EAD focado em passar conhecimentos de
-							negÛcio</p>
-						<p class="botao">
-							<a href="#">Conteudo</a>
-						</p>
-					</div>
+				<div class="portugues">
+					<img src="img/portugues.jpg">
+					<h5 class="name">Portugu√™s</h5>
+					<p class="desc">EAD focado em passar conhecimentos na √°rea de
+						neg√≥cios</p>
+					<a href="portugues.jsp">Conte√∫do</a>
 				</div>
-				<div class="card">
-					<img src="img/mat.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Matematica</h5>
-						<p class="card-text">EAD focado em fortalecer alguns conceitos
-							matem·ticos</p>
-						<p class="botao">
-							<a href="#">Conteudo</a>
-						</p>
-					</div>
+				<div class="matematica">
+					<img src="img/mat.jpg" class="card-img-top">
+					<h5 class="name">Matem√°tica</h5>
+					<p class="desc">EAD focado em fortalecer alguns conceitos
+						matem√°ticos</p>
+					<a href="#" class="unavailable">Conte√∫do</a>
 				</div>
 			</div>
+			<script src="script/EnviarQ.js"></script>
+			<script src="script/index.js"></script>
 		</c:when>
+
 		<c:otherwise>
 			<div class="n-logado">
-				<p>VocÍ n„o possui cadastro!</p>
+				<p>Voc√™ n√£o possui cadastro!</p>
 			</div>
 			<div class="opcao-deslogado">
 				<a href="cadastro.jsp">Cadastre-se</a>

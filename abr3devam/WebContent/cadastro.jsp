@@ -1,9 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+	<link rel="shortcut icon" href="img/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,23 +18,37 @@
     <div class="img">
         <img src="img/on.jpg" alt="" width="60%" height="40%">
     </div>
-   <c:forEach var="erro" items="${erro }">
-   <p>${erro }</p>
    
-   </c:forEach>
-    <div class="form">
+   <h1>Cadastro</h1>
+   <section class="container">
+   <div class="form">
         <form action="cadastrar" method="POST" name="formulario">
-            <input type="text" name="nome"  class="input" placeholder="Digite seu nome" required />
-            <input type="text" name="sobrenome"  class="input" placeholder="Digite seu segundo nome" required />
-            <input type="email" name="email"  class="input" placeholder="Digite seu Email" required/>
-            <input type="text" name="rm"  class="input" placeholder="Digite seu RM" required/>
-            <input type="password" name="senha" class="input" placeholder="Digite sua senha" required/>
-            <p class="question">Qual é seu filme favorito?</p>
+            <label>Nome:
+            <input type="text" name="nome"  class="input" placeholder="nome" required />
+        </label>
+        <label>Sobrenome:
+            <input type="text" name="sobrenome"  class="input" placeholder="segundo nome" required />
+        </label>
+        <label>E-mail:
+            <input type="email" name="email"  class="input" placeholder="Email" required />
+        </label>
+        <label>RM:
+            <input type="text" name="rm"  class="input" placeholder="RM" required/>
+        </label>
+        <label>Senha:
+            <input type="password" name="senha" class="input" placeholder="senha"required/>
+        </label>
+            <label> <p class="question">Qual Ã© o seu filme favorito?</p>
             <input type="text" name="rSeguranca"  class="input" placeholder="Resposta da Pergunta" required/>
-            <button class="botao">Login</button>
+        </label>
+         <c:forEach var="erro" items="${erro }">
+   <p class="invalid-fill">${erro }</p>
+   		</c:forEach> 
+            <button class="botao">Cadastre-se</button>
         </form>
     </div>
-    <!-- <script src="script/login.js"></script> -->
-    
+</section>
+     <script src="script/login.js"></script> 
+    <script src="js/cadastro.html"></script>
 </body>
 </html>

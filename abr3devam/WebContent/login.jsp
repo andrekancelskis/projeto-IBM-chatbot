@@ -1,9 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,25 +16,24 @@
 </head>
 
 <body>
-<c:choose>
-		<c:when test="${not empty erroLogin}">
-		 <p>Usu·rio ou senha inv·lidos</p>
-		</c:when>
-		</c:choose>
+
     <div class="form">
 	    
 	    <div class="img">
 	        <img src="img/on.jpg" alt="On">
 	    </div>
-	    
 	    <div class="form-bg"> 
 		    <form action="logar" method="POST" name="formulario">
 	            <input type="number" name="rm"  class="input input2" placeholder="&#xf007; RM" required />
-	            <input type="password" maxlength="6" name="senha" class="input input3" placeholder="&#xf023; Digite sua senha" required/>
+	            <input type="password" name="senha" class="input input3" placeholder="&#xf023; Digite sua senha" required/>
+	            <c:choose>
+		<c:when test="${not empty erroLogin}">
+		 <p class="invalid-user">Usu√°rio ou senha inv√°lidos!</p>
+		</c:when>
+		</c:choose>
 	            <button class="botao">Login</button>
 	        </form>
-	        
-	        <p> N„o possui uma conta?<a href="cadastro.jsp"> Cadastre-se</a></p>
+	        <p> N√£o possui uma conta?<a href="cadastro.jsp"> Cadastre-se</a></p>
 	        <p>Esqueceu sua senha? <a href="recuperarSenha.jsp"> Clique aqui</a></p>
 	    </div>
     </div>

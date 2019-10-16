@@ -16,46 +16,49 @@ import br.com.am.dao.AlunoDAO;
 import br.com.am.entities.Login;
 
 @WebServlet(urlPatterns = "/logar")
-public class LoginServlet extends HttpServlet{
+public class LoginServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
-	
 	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp){
-	
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
+
 		AlunoDAO dao = null;
-		
-		String rm = req.getParameter("rm");
-		String senha = req.getParameter("senha");
-		
+		RequestDispatcher dispatcher;
+
+		String rm = req.getParameter("rm").toUpperCase();
+		String senha = req.getParameter("senha").toUpperCase();
+
 		try {
 			Login l = new LoginBO().validarUser(rm, senha);
 			dao = new AlunoDAO();
 			String erro = "";
-		
-			if(l != null) {
+
+			if (l != null) {
 				HttpSession session = req.getSession();
 				session.setAttribute("logado", l);
 					session.setAttribute("nomeAluno", l.getNome());
-						RequestDispatcher dispatcher = req.getRequestDispatcher("index.jsp");
-								dispatcher.forward(req, resp);
-			}else{
+						dispatcher =  req.getRequestDispatcher("index.jsp");
+							dispatcher.forward(req, resp);
+			} else {
 				erro = "erro";
 				HttpSession session = req.getSession();
-				session.setAttribute("erroLogin", erro );
-				RequestDispatcher dispatcher = req.getRequestDispatcher("login.jsp");
-				dispatcher.forward(req, resp);
+				session.setAttribute("erroLogin", erro);
+				dispatcher = req.getRequestDispatcher("login.jsp");
+					dispatcher.forward(req, resp);
+						dispatcher = req.getRequestDispatcher("conteudo.jsp");
+							dispatcher = req.getRequestDispatcher("portugues.jsp");
+							
 			}
-		}catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("Não logou");
-		}finally {
+				System.out.println("O usuário não foi logado");
+		} finally {
 			try {
-			dao.encerrar();
-			}catch(Exception e) {
+				dao.encerrar();
+			} catch (Exception e) {
 				e.printStackTrace();
-				System.out.println("Não encerrou");
+					System.out.println("O banco não foi encerrado");
 			}
 		}
 	}

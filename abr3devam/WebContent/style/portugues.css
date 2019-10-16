@@ -11,6 +11,7 @@ body{
 *{
     text-decoration:none;
     color:white;
+    font-family: 'Roboto Slab', serif;
 }
 header{
   margin-top:2%;
@@ -22,6 +23,7 @@ header{
     border-bottom: 2px solid;
     border-image-source: radial-gradient( white, rgba(93, 91, 89, 0));
     border-image-slice: 1;
+      background-color:#1f1e1ea8;
 }
 .list{
     margin:3% 0 5% 5%;

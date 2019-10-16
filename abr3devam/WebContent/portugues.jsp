@@ -1,23 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+	<link rel="shortcut icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/portugues.css">
-    <title>Document</title>
+    <title>Português</title>
 </head>
 <body>
-    <header>
-        <p>português</p>
-        <p>Fiap EAD</p>
-        <p><a href="#">Sair</a></p>
+<c:choose>
+	<c:when test="${logado != null }"> 
+     <header>
+        <p>Português</p>
+        <p><a href="index.jsp">Fiap EAD</a></p>
+        <p><a href="logout">Sair</a></p>
     </header>
         <p class="list">Lista de conteúdos</p>
     <div class="container">
-
-
         <div class="conteudo"><p>Cap 1 - Comunicação Empresarial</p>
         <a href="#">Leia</a>
 </div>
@@ -34,7 +39,7 @@
         <a href="#">Leia</a>
 </div>
     <div class="conteudo"><p>Cap 6 - Conceito de Startup</p>
-        <a href="#">Leia</a>
+        <a href="conteudo.jsp">Leia</a>
 </div>
     <div class="conteudo"><p>Cap 7 - Modelo de Negócios - Canvas </p>
         <a href="#">Leia</a>
@@ -58,7 +63,16 @@
         <a href="#">Leia</a>
 </div>
     </div>
+    </c:when>
+    <c:otherwise> 
+			<div class="n-logado">
+				<p>Você não possui cadastro!</p>
+			</div>
+			<div class="opcao-deslogado">
+				<a href="cadastro.jsp">Cadastre-se</a>
+			</div>
+		 </c:otherwise>
 
-    
+    </c:choose>
 </body>
 </html>

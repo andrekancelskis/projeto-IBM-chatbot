@@ -1,6 +1,7 @@
 package br.com.am.servlets;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -22,37 +23,48 @@ public class RecuperarSenha extends HttpServlet{
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 		
-		String filme = req.getParameter("filme");
-		String email = req.getParameter("email");
-		String novaSenha = req.getParameter("novaSenha");
+		String filme = req.getParameter("filme").toUpperCase();
+		String email = req.getParameter("email").toUpperCase();
+		String novaSenha = req.getParameter("novaSenha").toUpperCase();
+		ArrayList<String> erros = new ArrayList<String>();
 		
 		RecuperarSenhaDAO rsenha = null;
 		
 		try {
 			 rsenha = new RecuperarSenhaDAO();
 			 	int id = rsenha.retornaID(email);
+			 	CadastroBO bo = new CadastroBO();
 			 	
 			 	String retorno = rsenha.retornarRSeguranca(email);
 			 	if(retorno == null) {
-			 		req.setAttribute("emailInexistente", "E-mail não cadastrado!");
-			 			RequestDispatcher dispatcher = req.getRequestDispatcher("recuperarSenha.jsp");
-			 				dispatcher.forward(req, resp);
+			 		erros.add( "E-mail não cadastrado!");
 			 	}else
-					if(retorno.equals(filme)) {
-						rsenha.novaSenha(id, novaSenha);
+					if(retorno.equalsIgnoreCase(filme)) {
+						if(bo.validarSenha(novaSenha) == false) {
+							erros.add("Senha incorreta");
+						}else {
+							rsenha.novaSenha(id, novaSenha);
+								String msg = "Mudado com sucesso!";
+									req.setAttribute("valor", msg);
+										RequestDispatcher dispatcher = req.getRequestDispatcher("recuperarSenha.jsp");
+											dispatcher.forward(req, resp);
+						}
 						
 					} else {
-						req.setAttribute("erro", "e-mail ou resposta incorreta! Digite novamente");
-							RequestDispatcher dispatcher = req.getRequestDispatcher("recuperarSenha.jsp");
-								dispatcher.forward(req, resp);
+						erros.add("e-mail ou resposta incorreta! Digite novamente");
 					}
+			 	req.setAttribute("erro", erros);
+			 		RequestDispatcher dispatcher = req.getRequestDispatcher("recuperarSenha.jsp");
+			 			dispatcher.forward(req, resp);
 	}catch(Exception e){
 			e.printStackTrace();
+			System.out.println("O processo de recuperação de senha não foi completo.");
 		}finally {
 			try {
 				rsenha.encerrar();
 			}catch(Exception e){
 				e.printStackTrace();
+				System.out.println("O banco não foi encerrado");
 			}
 		}
 		

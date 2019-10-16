@@ -1,35 +1,42 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
     	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<meta charset="utf-8">
-<title>Recuperar senha</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/recuperarSenha.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-    <p>Digite o e-mail do cadastro e a resposta inserida</p>
-    <form action="recuperarSenha" method="post">
-        <input type="text" name="filme" placeholder="Digite sua resposta de seguranÁa" required>
-        <input type="email" name="email" placeholder="digite seu email" required>
-        <input type="password" name="novaSenha" placeholder="Digite sua nova senha" required>
-        <button>Verificar</button>
-    </form>
-    
-     	<c:if test="${not empty emailInexistente}">
-	<%=request.getAttribute("emailInexistente") %>
-	</c:if>
-<c:choose>
-	<c:when test="${valor != null }">
-		<p>Digite sua nova senha</p>
-		<form action="novaSenha" method="post">
-        <input type="text" name="filme" placeholder="Digite sua resposta de seguranÁa" required>
-        <button>Verificar</button>
-    </form>
-	</c:when>
-	<c:otherwise>
-	 <%=request.getAttribute("erro")%>
-	</c:otherwise>
-</c:choose>
+    <div class="container">
+                <p class="titulo">Digite a resposta colocada no seu cadastro</p>
+                <form action="recuperarSenha" method="post">
+                <label>Resposta de Seguran√ßa
+                    <input type="text" name="filme" placeholder="Digite sua resposta de seguran√ßa">
+                    </label>
+                    <label>E-mail
+                    <input type="email" name="email" placeholder="digite seu email">
+                    </label>
+                    <label>Nova senha
+                    <input type="password" name="novaSenha" placeholder="Digite suanova senha"/>
+                    </label>
+                    <button class="check">Verificar</button>
+                       <c:choose>
+    	<c:when test="${valor != null }">
+    		<p class="feedback">Senha mudada com sucesso! <a href="login.jsp">Voltar para login</a>
+    	</c:when>
+    </c:choose>
+    <c:forEach var="erro" items="${erro }">
+   <p class="erro">${erro }</p>
+   </c:forEach>
+
+                </form>
+            </div>
+ 
 </body>
 </html>
