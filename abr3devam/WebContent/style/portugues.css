@@ -56,24 +56,20 @@ justify-content:space-around;
 .conteudo p{
   color:black;
 }
-.conteudo a{
-  background-color:#fbfbfb;
-  padding:5% 15%;
-	margin-bottom:-5%;
-  text-decoration:none;
-  border-style:solid;
+button{
+	padding:15px 30px;
+	border-radius:5px;
+	background-color:white;
+	color:black;
 	border-width:thin;
-  border-color:black;
-  color:black;
-  transition:all 0.5s cubic-bezier(0, 1.01, 1, 1.03);
-  display:flex;
-  justify-content: flex-end;
-  justify-items:flex-end;
+	border-style:solid;
+	border-color:black;
 }
-.conteudo a:hover{
-	text-decoration:underline;
+button:hover{
+	cursor:pointer;
 	background-color:black;
-	color:white;	
+	color:white;
+	transition:all ease 0.5s;
 }
 @media screen and (max-width:768px){
     .container{
@@ -84,5 +80,4 @@ justify-content:space-around;
     	width:80%;
     	margin-left:10%;
     }
-
 }
